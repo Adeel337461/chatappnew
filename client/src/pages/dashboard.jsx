@@ -32,7 +32,7 @@ const Dashboard = () => {
       });
 
       return () => socket.disconnect();
-    }, 1000);
+    }, 100);
 
     return () => clearTimeout(timeout);
   }, [userinfo.token, dispatch]);
